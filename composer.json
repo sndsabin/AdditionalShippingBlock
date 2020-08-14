@@ -1,0 +1,23 @@
+{
+    "name": "sndsabin/module-additionalshippingblock",
+    "description": "This module lets you add block below the shipping method in Checkout Page.",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "sndsabin",
+            "email": "sndsabin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SNDSABIN\\AdditionalShippingBlock\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

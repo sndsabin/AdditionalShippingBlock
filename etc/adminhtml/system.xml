@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="additionalshippingblock" sortOrder="999" translate="label">
+            <label>Additional Shipping Block</label>
+        </tab>
+        <section id="additionalshippingblock_view" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
+                 translate="label">
+            <label>View Settings</label>
+            <tab>additionalshippingblock</tab>
+            <resource>SNDSABIN_AdditionalShippingBlock::config_sndsabin_additionalshippingblock</resource>
+            <group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>General</label>
+                <field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label"
+                       type="select">
+                    <label>Enabled</label>
+                    <comment>If enabled, the assigned block will be displayed below shipping method in checkout page.
+                    </comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="block" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Block</label>
+                <field id="renderBlockIfDisabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
+                       translate="label" type="select">
+                    <label>Render Selected Block If Disabled</label>
+                    <comment>If selected Yes, the selected block will be rendered in checkout page even if the selected
+                        block is not enabled.
+                    </comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="blockSelected" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
+                       translate="label" type="select">
+                    <label>Block</label>
+                    <comment>select the block to be added below the shipping methods in checkout page.</comment>
+                    <source_model>Magento\Catalog\Model\Category\Attribute\Source\Page</source_model>
+                </field>
+
+                <field id="blockPlacement" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
+                       translate="label" type="select">
+                    <label>Block Placement</label>
+                    <comment>select the position of the selected block to be placed in checkout page (above or below the
+                        shipping methods).
+                    </comment>
+                    <source_model>SNDSABIN\AdditionalShippingBlock\Model\Config\Source\BeforeAfterShippingMethod</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
