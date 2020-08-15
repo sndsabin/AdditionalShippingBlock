@@ -1,8 +1,8 @@
 # AdditionalShippingBlock - Magento 2 Module
 
- - [Main Functionality](#markdown-header-main-functionality)
- - [Installation](#markdown-header-installation)
- - [Configuration](#markdown-header-configuration)
+ - [Main Functionality](#main-functionality)
+ - [Installation](#installation)
+ - [Configuration](#configuration)
 
 
 ## Main Functionality
@@ -11,18 +11,18 @@ This module lets you add block in the desired placement position within shipping
 ## Installation
 \* = in production please use the `--keep-generated` option
 
-### Type 1: Zip file
-
- - Unzip the zip file or git clone(```git clone https://github.com/sndsabin/AdditionalShippingBlock.git```) this repo in `app/code/SNDSABIN/`.
- - Enable the module by running `php bin/magento module:enable SNDSABIN_AdditionalShippingBlock`
- - Apply database updates by running `php bin/magento setup:upgrade`\*
- - Flush the cache by running `php bin/magento cache:flush`
-
-### Type 2: Composer (recommended)
+### Type 1: Composer (recommended)
 
  - Install the module composer by running `composer require sndsabin/module-additionalshippingblock`
  - enable the module by running `php bin/magento module:enable SNDSABIN_AdditionalShippingBlock`
  - apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
+
+### Type 2: Zip file
+
+ - Unzip the zip file or git clone(```git clone https://github.com/sndsabin/AdditionalShippingBlock.git```) this repo in `app/code/SNDSABIN/`.
+ - Enable the module by running `php bin/magento module:enable SNDSABIN_AdditionalShippingBlock`
+ - Apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
 
 
@@ -77,7 +77,7 @@ There are two classes added to the div element in template ```additional-shippin
 ![Template css class](docs/images/template-css-classes.png)
 
 ## License
-[GPL](LICENSE.txt)
+[GPL](LICENSE)
 
 ##### Uppercase Vendor Name 😛 ?
 Yes 😄
