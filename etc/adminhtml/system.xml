@@ -15,8 +15,7 @@
                 <field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label"
                        type="select">
                     <label>Enabled</label>
-                    <comment>If enabled, the assigned block will be displayed below shipping method in checkout page.
-                    </comment>
+                    <comment>If enabled, the assigned block will be visible in the desired position within shipping method in checkout page.</comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
             </group>
@@ -34,16 +33,14 @@
                 <field id="blockSelected" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
                        translate="label" type="select">
                     <label>Block</label>
-                    <comment>select the block to be added below the shipping methods in checkout page.</comment>
+                    <comment>select the block to be added above/below the shipping methods in checkout page.</comment>
                     <source_model>Magento\Catalog\Model\Category\Attribute\Source\Page</source_model>
                 </field>
 
                 <field id="blockPlacement" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
                        translate="label" type="select">
                     <label>Block Placement</label>
-                    <comment>select the position of the selected block to be placed in checkout page (above or below the
-                        shipping methods).
-                    </comment>
+                    <comment>select the position of the selected block to be placed in checkout page (above or below the shipping methods).</comment>
                     <source_model>SNDSABIN\AdditionalShippingBlock\Model\Config\Source\BeforeAfterShippingMethod</source_model>
                 </field>
             </group>

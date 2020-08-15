@@ -7,7 +7,7 @@
 			</general>
 			<block>
 				<blockSelected/>
-				<renderBlockIfDisabled>1</renderBlockIfDisabled>
+				<renderBlockIfDisabled>0</renderBlockIfDisabled>
 				<blockPlacement>shippingAdditional</blockPlacement>
 			</block>
 		</additionalshippingblock_view>
